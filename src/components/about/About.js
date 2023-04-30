@@ -23,17 +23,14 @@ const About = () => {
           <Card icon={<MdMyLocation/>} headline={'Location'} lines={['Berlin', 'Germany']}/>
         </div>
         <p className='about__text'>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
-          sed diam nonumy eirmod tempor invidunt ut labore et dolore
-          magna aliquyam erat, sed diam voluptua. At vero eos et 
-          accusam et justo duo dolores et ea rebum. 
-          Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
-          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
-          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
-          labore et dolore magna aliquyam erat, sed diam voluptua. At 
-          vero eos et accusam et justo duo dolores et ea rebum. Stet 
-          clita kasd gubergren, no sea takimata sanctus est Lorem 
-          ipsum dolor sit amet.
+        I am actively seeking opportunities to gain hands-on experience 
+        in the fields of software engineering and data science. I believe 
+        that an internship would provide me with valuable exposure to 
+        real-world challenges and cutting-edge technologies, while allowing 
+        me to contribute to meaningful projects and make a positive impact. 
+        If you are interested in discussing internship opportunities or 
+        learning more about my qualifications, please do not hesitate to contact 
+        me. Thank you for considering my application!
         </p>
       </div>
     </div>
