@@ -1,0 +1,48 @@
+.degree__container {
+    text-align: center;
+}
+
+.degree__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3.5rem;
+}
+
+.degree__text {
+    width: 85%;
+}
+
+.course__container {
+    margin-top: 2.5rem;
+    width: 90%;
+}
+
+.grid__container {
+    align-items: center;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*============ MEDIA QUERIES ============*/
+
+@media only screen and (max-width: 1024px) {
+    .degree__text {
+        font-size: 130%;
+    }
+
+    .course__container {
+        width: 100%;
+    }
+
+    .grid__container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .degree__text {
+        font-size: 120%;
+    }
+}

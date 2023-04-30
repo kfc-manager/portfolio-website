@@ -46,6 +46,14 @@ a {
     font-size: 200%;
 }
 
+p {
+    color: var(--secondary-color);
+    text-align: left;
+    font-size: 1.5rem;
+    overflow-wrap: break-word;
+    width: 100%;
+}
+
 a:hover {
     color: #FFFFFF;
 }
@@ -72,16 +80,24 @@ h5 {
     font-size: 105%;
 }
 
-p {
-    color: var(--secondary-color);
-    text-align: left;
-    font-size: 1.75rem;
-    overflow-wrap: break-word;
-    width: 100%;
-}
-
 img {
     display: block;
     width: 100%;
     object-fit: cover;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+/*========== MEDIA QUERIES ==========*/
+
+@media only screen and (max-width: 1024px) {
+    
+}
+
+@media only screen and (max-width: 600px) {
+    
 }

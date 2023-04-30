@@ -8,23 +8,33 @@ import Card from './Card'
 
 const About = () => {
   return (
-    <div className='about__container'>
+    <div className='container about__container'>
       <div className='me__container'>
         <div className='me__background'>
           <div className='me__image'>
-            <img src={ME} alt='About Image'/>
+            <img src={ME} alt='About me'/>
           </div>
         </div>
       </div>
-      <div className='cards__container'>
-        <div className='cards-sub__container'>
+      <div className='about-content__container'>
+        <div className='cards__container'>
           <Card icon={<FaGraduationCap/>} headline={'School'} lines={['University', 'of Potsdam']}/>
           <Card icon={<MdLanguage/>} headline={'Language'} lines={['English', 'German']}/>
-        </div>
-        <div className='cards-sub__container'>
-          <Card icon={<MdMyLocation/>} headline={'Location'} lines={['Berlin', 'Germany']}/>
           <Card icon={<MdMyLocation/>} headline={'Location'} lines={['Berlin', 'Germany']}/>
         </div>
+        <p className='about__text'>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+          sed diam nonumy eirmod tempor invidunt ut labore et dolore
+          magna aliquyam erat, sed diam voluptua. At vero eos et 
+          accusam et justo duo dolores et ea rebum. 
+          Stet clita kasd gubergren, no sea takimata sanctus est Lorem 
+          ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur 
+          sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut 
+          labore et dolore magna aliquyam erat, sed diam voluptua. At 
+          vero eos et accusam et justo duo dolores et ea rebum. Stet 
+          clita kasd gubergren, no sea takimata sanctus est Lorem 
+          ipsum dolor sit amet.
+        </p>
       </div>
     </div>
   )

@@ -11,6 +11,7 @@
     min-width: 170px;
     min-height: 170px;
     margin: 1rem;
+    aspect-ratio: 1/1;
 }
 
 .card:hover {
@@ -25,17 +26,26 @@
 /*============ MEDIA QUERIES ============*/
 
 @media only screen and (max-width: 1024px) {
-    .card {
-        width: 320px;
-        height: 320px;
-        margin: 2rem;
-    }
+    
 }
 
 @media only screen and (max-width: 600px) {
+    .icon {
+        font-size: 1.25rem;
+        margin-bottom: 0;
+    }
+
+    .card__headline {
+        font-size: 100%;
+    }
+
+    .card__content {
+        font-size: 80%;
+    }
+
     .card {
-        width: 170px;
-        height: 170px;
-        margin: 1rem;
+        min-width: 100px;
+        min-height: 100px;
+        margin: .5rem;
     }
 }

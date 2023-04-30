@@ -7,10 +7,10 @@ const Card = (props) => {
         <div className='icon'>
             {props.icon}
         </div>
-        <h4>
+        <h4 className='card__headline'>
             {props.headline}
         </h4>
-        {props.lines.map(item => {return <h5>{item}</h5>})}
+        {props.lines.map(item => {return <h5 className='card__content'>{item}</h5>})}
     </article>
   )
 }
