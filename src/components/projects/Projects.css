@@ -69,7 +69,8 @@
     }
 
     .slide__content {
-        font-size: 110%;
+        font-size: 1.75rem;
+        min-height: 35rem;
     }
 
     .source-button {
