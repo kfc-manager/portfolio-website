@@ -5,3 +5,15 @@
     justify-content: center;
     margin-bottom: 2rem;
 }
+
+/*============ MEDIA QUERIES ============*/
+
+@media only screen and (max-width: 1024px) {
+    .social__icon {
+        font-size: 150%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

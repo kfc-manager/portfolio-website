@@ -64,13 +64,12 @@
 
 @media only screen and (max-width: 1024px) {
     .slide__headline {
-        font-size: 150%;
+        font-size: 135%;
         margin: 2rem 0 1rem 0;
     }
 
     .slide__content {
         font-size: 1.75rem;
-        min-height: 35rem;
     }
 
     .source-button {
