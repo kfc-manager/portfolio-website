@@ -17,6 +17,11 @@ const Projects = () => {
             headline: 'This Website',
             content: 'I built this portfolio website to showcase my skills, experience, and projects to potential clients and employers. I wanted to demonstrate my work in a visually appealing and organized manner, while also providing easy access to my contact information. My skillset grew with this project as I had very little knowledge about web design before and I got more comfortable using JS, CSS, HTML and React.',
             source: 'https://github.com/kfc-manager/portfolio-website'
+        },
+        {
+            headline: 'CustomShop',
+            content: 'This is a Minecraft plugin I created. It uses the spigot api to alter the behavior of the game. I also made use of the VaultAPI which makes the plugin automatically connect to an economy, added by an economy plugin and uses its currency to allow purchases in the custom creatable shop. It adds multiple commands to customize the shop and also a command to make the shop accessable to ervery player.',
+            source: 'https://github.com/kfc-manager/CustomShop'
         }
       ]
 
