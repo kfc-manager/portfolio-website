@@ -10,7 +10,7 @@ const Projects = () => {
     const data = [
         {
             headline: 'Spotify Party',
-            content: 'Spotify Party lets you share access to your account\'s play queue with your friends. I was looking to gather more experience at backend development and this seemed to be the perfect project to get more into it. As I already had a lot of experience with Java, the backend framework Spring Boot came immediately to mind. I also learned a lot about Spotify\'s REST Api.',
+            content: 'Spotify Party lets you share access to your account\'s play queue with your friends. I was looking to gather more experience at backend development and this seemed to be the perfect project to get more into it. As I already had a lot of experience with Java, the backend framework SpringBoot came immediately to mind. I also learned a lot about Spotify\'s REST Api.',
             source: 'https://github.com/kfc-manager/SpotifyParty'
         },
         {
@@ -20,7 +20,7 @@ const Projects = () => {
         },
         {
             headline: 'CustomShop',
-            content: 'This is a Minecraft plugin I created. It uses the spigot api to alter the behavior of the game. I also made use of the VaultAPI which makes the plugin automatically connect to an economy, added by an economy plugin and uses its currency to allow purchases in the custom creatable shop. It adds multiple commands to customize the shop and also a command to make the shop accessable to ervery player.',
+            content: 'This is a Minecraft plugin I created. It uses the spigot api to alter the behavior of the game. I also made use of the VaultAPI which makes the plugin automatically connect to an economy, added by an economy plugin and uses its currency to allow purchases in the custom creatable shop. It adds multiple commands to customize the shop and also a command to make the shop accessable to every player.',
             source: 'https://github.com/kfc-manager/CustomShop'
         }
       ]
