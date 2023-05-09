@@ -20,8 +20,18 @@ const Projects = () => {
         },
         {
             headline: 'CustomShop',
-            content: 'This is a Minecraft plugin I created. It uses the spigot api to alter the behavior of the game. I also made use of the VaultAPI which makes the plugin automatically connect to an economy, added by an economy plugin and uses its currency to allow purchases in the custom creatable shop. It adds multiple commands to customize the shop and also a command to make the shop accessable to every player.',
+            content: 'This is one of the more complex Minecraft plugins I created. It uses the spigot api to alter the behavior of the game. I also made use of the VaultAPI which makes the plugin automatically connect to an economy, added by an economy plugin and uses its currency to allow purchases in the custom creatable shop. It adds multiple commands to customize the shop and also a command to make the shop accessable to every player.',
             source: 'https://github.com/kfc-manager/CustomShop'
+        },
+        {
+            headline: 'SyncedHealthBar',
+            content: 'As the name already suggests this Minecraft plugin implements synchronized health bars in the game, which means that you can group players to one health bar so that they take damage, heal and die together! You can even create multiple health bars for a larger servers, where people should not share all the same health bar. It provides five commands to modify the health bars and group players to them.',
+            source: 'https://github.com/kfc-manager/SyncedHealthBar'
+        },
+        {
+            headline: 'CrazyPotionEffects',
+            content: 'Originally this plugin was a request from a user on the r/MinecraftPlugin subreddit, which I decided to implement. The plugin adds permanent potion effects, which are obtained by either killing a player or by dying. It also adds an item, which can cure the negative effects. The effects and the recipe of the "cure"-item is fully configurable by .yml files, which are getting generated and initialized by the plugin.',
+            source: 'https://github.com/kfc-manager/CrazyPotionEffects'
         }
       ]
 
