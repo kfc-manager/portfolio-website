@@ -10,7 +10,7 @@ const Projects = () => {
     const data = [
         {
             headline: 'Spotify Party',
-            content: 'Spotify Party lets you share access to your account\'s play queue with your friends. I was looking to gather more experience at backend development and this seemed to be the perfect project to get more into it. As I already had a lot of experience with Java, the backend framework SpringBoot came immediately to mind. I also learned a lot about Spotify\'s REST Api.',
+            content: 'SpotifyParty implements a simple router, which provides multiple endpoints so your friends can view and controll the play queue of one account. I was looking to gather more experience at backend development and this seemed to be the perfect project to get more into it. As I already had a lot of experience with Java, the backend framework SpringBoot came immediately to mind. By working on this project I also learned a lot about Spotify\'s REST Api.',
             source: 'https://github.com/kfc-manager/SpotifyParty'
         },
         {
