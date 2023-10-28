@@ -1,0 +1,53 @@
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: calc(100vh - 80px);
+}
+
+.text-box-wrapper {
+  height: 70vh;
+  background-color: var(--violet);
+}
+
+.text-box {
+  color: var(--dark-grey);
+  padding: 20px;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.info-box {
+  height: 60vh;
+  width: 50%;
+}
+
+.info-card {
+}
+
+.info-card-hexagon {
+  margin-left: 52px;
+  margin-bottom: 1px;
+  transition: 1000ms all ease;
+}
+
+.info-card-hexagon .top {
+  border-bottom: 100px solid var(--dark-grey);
+  border-left: 152px solid transparent;
+  border-right: 152px solid transparent;
+}
+
+.info-card-hexagon .middle {
+  width: 304px;
+  height: 160px;
+  background: var(--dark-grey);
+  border-left: 4px solid var(--violet);
+  border-right: 4px solid var(--violet);
+}
+
+.info-card-hexagon .bottom {
+  border-top: 100px solid var(--dark-grey);
+  border-left: 152px solid transparent;
+  border-right: 152px solid transparent;
+}

@@ -1,0 +1,41 @@
+.app-background {
+  position: fixed;
+  z-index: -1;
+  left: -110px;
+}
+
+.hexagon {
+  margin-left: 52px;
+  margin-bottom: 1px;
+  transition: 1000ms all ease;
+}
+
+.hexagon.spin {
+  transform: rotate(360deg);
+}
+
+.hexagon .top {
+  border-bottom: 30px solid var(--light-grey);
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hexagon .middle {
+  width: 104px;
+  height: 60px;
+  background: var(--light-grey);
+}
+
+.hexagon .bottom {
+  border-top: 30px solid var(--light-grey);
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+
+.hexagon-row {
+  display: flex;
+}
+
+.hexagon-row.even {
+  margin-left: 79px;
+}
