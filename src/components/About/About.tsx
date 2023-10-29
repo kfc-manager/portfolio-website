@@ -25,7 +25,15 @@ const About = (): JSX.Element => {
         </p>
       </div>
       <div className="info-box">
-        <InfoCard />
+        <div className="info-box-row-wrapper">        
+          <div className="info-box-row">
+            <InfoCard />
+            <InfoCard />
+          </div>
+          <div className="info-box-row even">
+            <InfoCard />
+          </div>
+        </div>
       </div>
     </div>
   );

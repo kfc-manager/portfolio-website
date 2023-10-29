@@ -7,7 +7,7 @@
 .hexagon {
   margin-left: 52px;
   margin-bottom: 1px;
-  transition: 1000ms all ease;
+  transition: 2500ms all ease;
 }
 
 .hexagon.spin {
