@@ -28,11 +28,3 @@ body {
   color: var(--white);
   font-family: "JetBrains Mono", monospace;
 }
-
-h1 {
-  font-size: 32px;
-}
-
-h2 {
-  font-size: 24px;
-}

@@ -1,5 +1,5 @@
 const Projects = (): JSX.Element => {
-  return <div style={{fontSize: "300px"}}>Le Nerd stinkt!</div>;
+  return <div></div>;
 };
 
 export default Projects;

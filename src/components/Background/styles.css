@@ -7,11 +7,6 @@
 .hexagon {
   margin-left: 52px;
   margin-bottom: 1px;
-  transition: 2500ms all ease;
-}
-
-.hexagon.spin {
-  transform: rotate(360deg);
 }
 
 .hexagon .top {

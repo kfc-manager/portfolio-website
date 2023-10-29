@@ -1,4 +1,4 @@
-import InfoCard from "./InfoCard";
+import InfoCard from "../InfoCard/InfoCard";
 import "./styles.css";
 
 const About = (): JSX.Element => {
@@ -25,13 +25,69 @@ const About = (): JSX.Element => {
         </p>
       </div>
       <div className="info-box">
-        <div className="info-box-row-wrapper">        
+        <div className="info-box-row-wrapper">
           <div className="info-box-row">
-            <InfoCard />
-            <InfoCard />
+            <InfoCard
+              icon={
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ fontSize: "32px", color: "var(--white)" }}
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"></path>
+                </svg>
+              }
+              headline={"Employment"}
+              body={"Full Stack Developer at EMPIT GmbH"}
+              index={0}
+            />
+            <InfoCard
+              icon={
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ fontSize: "32px", color: "var(--white)" }}
+                >
+                  <path d="M256 370.43L96 279v98.42l160 88.88 160-88.88V279l-160 91.43z"></path>
+                  <path d="M512.25 192L256 45.57-.25 192 256 338.43l208-118.86V384h48V192.14l.25-.14z"></path>
+                </svg>
+              }
+              headline={"Degree"}
+              body={"Computer Science at University of Potsdam"}
+              index={1}
+            />
           </div>
           <div className="info-box-row even">
-            <InfoCard />
+            <InfoCard
+              icon={
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style={{ fontSize: "32px", color: "var(--white)" }}
+                >
+                  <path d="M464 428L339.92 303.9a160.48 160.48 0 0030.72-94.58C370.64 120.37 298.27 48 209.32 48S48 120.37 48 209.32s72.37 161.32 161.32 161.32a160.48 160.48 0 0094.58-30.72L428 464zM209.32 319.69a110.38 110.38 0 11110.37-110.37 110.5 110.5 0 01-110.37 110.37z"></path>
+                </svg>
+              }
+              headline={"Interests"}
+              body={"Programming, Finance and Astronomy"}
+              index={2}
+            />
           </div>
         </div>
       </div>

@@ -4,98 +4,34 @@
   align-items: center;
   justify-content: space-between;
   height: calc(100vh - 80px);
+  overflow: hidden;
 }
 
 .text-box-wrapper {
+  position: relative;
   height: 80vh;
   background-color: var(--violet);
+  display: flex;
+  animation-name: text-box-slide-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  box-shadow: var(--box-shadow);
+}
+
+@keyframes text-box-slide-in {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .text-box {
+  overflow: scroll;
+  margin: 50px;
   color: var(--dark-grey);
-  padding: 20px;
-  font-size: 28px;
+  font-size: 24px;
+  line-height: 1.7;
   font-weight: 800;
-}
-
-.info-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 80vh;
-}
-
-.info-box-row {
-  display: flex;
-}
-
-.even {
-  margin-left: 200px;
-}
-
-.info-card {
-  display: flex;
-  padding: 0 50px;
-}
-
-.border-container-upper {
-  position: absolute;
-  display: flex;
-}
-
-.border-line-upper-left {
-  top: -2px;
-  position: relative;
-  width: 152px; 
-  height: 100px; 
-  background: linear-gradient(-32deg, transparent 49%, var(--violet) 50%, var(--violet) 50%, transparent 51%);
-}
-
-.border-line-upper-right {
-  top: -2px;
-  position: relative;
-  width: 152px; 
-  height: 100px; 
-  background: linear-gradient(32deg, transparent 49%, var(--violet) 50%, var(--violet) 50%, transparent 51%);
-}
-
-.border-container-lower {
-  position: absolute;
-  display: flex;
-}
-
-.border-line-lower-left {
-  top: -2px;
-  position: relative;
-  width: 152px; 
-  height: 100px; 
-  background: linear-gradient(32deg, transparent 49%, var(--violet) 50%, var(--violet) 50%, transparent 51%);
-}
-
-.border-line-lower-right {
-  top: -2px;
-  position: relative;
-  width: 152px; 
-  height: 100px; 
-  background: linear-gradient(-32deg, transparent 49%, var(--violet) 50%, var(--violet) 50%, transparent 51%);
-}
-
-.info-card-hexagon .top {
-  border-bottom: 95px solid var(--dark-grey);
-  border-left: 152px solid transparent;
-  border-right: 152px solid transparent;
-}
-
-.info-card-hexagon .middle {
-  width: 304px;
-  height: 160px;
-  background: var(--dark-grey);
-  border-left: 2px solid var(--violet);
-  border-right: 2px solid var(--violet);
-}
-
-.info-card-hexagon .bottom {
-  border-top: 95px solid var(--dark-grey);
-  border-left: 152px solid transparent;
-  border-right: 152px solid transparent;
 }

@@ -1,10 +1,31 @@
 .navbar {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   height: 80px;
   background-color: var(--dark-grey);
   border-bottom: 1px solid var(--white);
+}
+
+.socials {
+  display: flex;
+  font-size: 38px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+}
+
+.social-icon {
+  color: var(--white);
+  transition: 400ms all ease;
+}
+
+.social-icon:hover {
+  color: var(--violet);
 }
 
 .routerlinks {
@@ -14,7 +35,13 @@
 
 .routerlink {
   font-size: 20px;
+  font-weight: 1000;
   width: 150px;
   text-align: center;
   color: var(--white);
+  transition: 400ms all ease;
+}
+
+.routerlink:hover {
+  color: var(--violet);
 }

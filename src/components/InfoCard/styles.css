@@ -1,0 +1,138 @@
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  margin: 70px;
+}
+
+.info-box-row {
+  display: flex;
+}
+
+.even {
+  margin-left: 200px;
+}
+
+@keyframes info-box-slide-in {
+  0% {
+    bottom: -300%;
+  }
+  20% {
+    opacity: 1;
+    bottom: -250%;
+  }
+  100% {
+    opacity: 1;
+    bottom: 0;
+  }
+}
+
+.border-container-upper {
+  position: absolute;
+  display: flex;
+}
+
+.border-line-upper-left {
+  top: -8px;
+  position: relative;
+  width: 152px;
+  height: 100px;
+  background: linear-gradient(
+    -30deg,
+    transparent 49%,
+    var(--violet) 50%,
+    var(--violet) 50%,
+    transparent 51%
+  );
+}
+
+.border-line-upper-right {
+  top: -8px;
+  position: relative;
+  width: 152px;
+  height: 100px;
+  background: linear-gradient(
+    30deg,
+    transparent 49%,
+    var(--violet) 50%,
+    var(--violet) 50%,
+    transparent 51%
+  );
+}
+
+.border-container-lower {
+  position: absolute;
+  display: flex;
+}
+
+.border-line-lower-left {
+  top: -7px;
+  position: relative;
+  width: 152px;
+  height: 100px;
+  background: linear-gradient(
+    30deg,
+    transparent 49%,
+    var(--violet) 50%,
+    var(--violet) 50%,
+    transparent 51%
+  );
+}
+
+.border-line-lower-right {
+  top: -7px;
+  position: relative;
+  width: 152px;
+  height: 100px;
+  background: linear-gradient(
+    -30deg,
+    transparent 49%,
+    var(--violet) 50%,
+    var(--violet) 50%,
+    transparent 51%
+  );
+}
+
+.info-card-hexagon .top {
+  border-bottom: 85px solid var(--dark-grey);
+  border-left: 152px solid transparent;
+  border-right: 152px solid transparent;
+}
+
+.info-card-hexagon .middle {
+  width: 304px;
+  height: 170px;
+  background: var(--dark-grey);
+  border-left: 2px solid rgba(186, 154, 201, 0.7);
+  border-right: 2px solid rgba(186, 154, 201, 0.7);
+}
+
+.info-card-hexagon .bottom {
+  border-top: 85px solid var(--dark-grey);
+  border-left: 152px solid transparent;
+  border-right: 152px solid transparent;
+}
+
+.info-card-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 304px;
+  height: 350px;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.info-card-headline {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.info-card-body {
+  color: var(--light-grey);
+  font-size: 16px;
+  margin: 0 40px;
+  text-align: center;
+}

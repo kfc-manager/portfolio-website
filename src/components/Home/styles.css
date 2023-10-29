@@ -2,17 +2,32 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   height: calc(100vh - 80px);
 }
 
 .side-block-wrapper {
   display: flex;
+  position: relative;
   justify-content: right;
+  animation-name: slide-in;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
   width: 100%;
+}
+
+@keyframes slide-in {
+  0% {
+    right: -20%;
+  }
+  100% {
+    right: 0;
+  }
 }
 
 .side-block {
   width: 160px;
   height: 80vh;
   background-color: var(--violet);
+  box-shadow: var(--box-shadow);
 }
