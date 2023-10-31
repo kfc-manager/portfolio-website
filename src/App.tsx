@@ -4,6 +4,7 @@ import Projects from "./components/Projects/Projects";
 import Navbar from "./components/Navbar/Navbar";
 import Background from "./components/Background/Background";
 import About from "./components/About/About";
+import ReadMorePage from "./components/ReadMorePage/ReadMorePage";
 
 const App = (): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const App = (): JSX.Element => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/readmore" element={<ReadMorePage />} />
         </Routes>
       </div>
       <Background />

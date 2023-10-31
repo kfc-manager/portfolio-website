@@ -45,7 +45,10 @@ const About = (): JSX.Element => {
               }
               headline={"Employment"}
               body={"Full Stack Developer at EMPIT GmbH"}
-              index={0}
+              link={undefined}
+              delay={0}
+              horizontalSlide={false}
+              time={1}
             />
             <InfoCard
               icon={
@@ -65,7 +68,10 @@ const About = (): JSX.Element => {
               }
               headline={"Degree"}
               body={"Computer Science at University of Potsdam"}
-              index={1}
+              link={undefined}
+              delay={0.5}
+              time={1}
+              horizontalSlide={false}
             />
           </div>
           <div className="info-box-row even">
@@ -86,7 +92,10 @@ const About = (): JSX.Element => {
               }
               headline={"Interests"}
               body={"Programming, Finance and Astronomy"}
-              index={2}
+              link={undefined}
+              delay={1}
+              time={1}
+              horizontalSlide={false}
             />
           </div>
         </div>

@@ -35,3 +35,19 @@
   line-height: 1.7;
   font-weight: 800;
 }
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  margin: 70px;
+}
+
+.info-box-row {
+  display: flex;
+}
+
+.even {
+  margin-left: 200px;
+}

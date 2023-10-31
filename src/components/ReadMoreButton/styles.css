@@ -1,0 +1,114 @@
+.read-more-button {
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.read-more-hexagon .read-more-top {
+  border-bottom: 12px solid var(--dark-grey);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transition: 400ms all ease;
+}
+
+.read-more-hexagon .read-more-middle {
+  width: 40px;
+  height: 20px;
+  background: var(--dark-grey);
+  border-left: 1px solid rgba(255, 255, 255, 0.7);
+  border-right: 1px solid rgba(255, 255, 255, 0.7);
+  transition: 400ms all ease;
+}
+
+.read-more-hexagon .read-more-bottom {
+  border-top: 12px solid var(--dark-grey);
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transition: 400ms all ease;
+}
+
+.remove-bg {
+  background: unset !important;
+}
+
+.remove-border-lr {
+  border-left: unset !important;
+  border-right: unset !important;
+  background-color: var(--violet) !important;
+}
+
+.add-color-top {
+  border-bottom: 12px solid var(--violet) !important;
+}
+
+.add-color-bottom {
+  border-top: 12px solid var(--violet) !important;
+}
+
+.read-more-border-container-upper {
+  position: absolute;
+  display: flex;
+}
+
+.read-more-border-line-upper-left {
+  top: -44px;
+  position: relative;
+  width: 20px;
+  height: 100px;
+  background: linear-gradient(
+    -30deg,
+    transparent 49%,
+    var(--white) 50%,
+    var(--white) 50%,
+    transparent 51%
+  );
+}
+
+.read-more-border-line-upper-right {
+  top: -44px;
+  position: relative;
+  width: 20px;
+  height: 100px;
+  background: linear-gradient(
+    30deg,
+    transparent 49%,
+    var(--white) 50%,
+    var(--white) 50%,
+    transparent 51%
+  );
+}
+
+.read-more-border-container-lower {
+  position: absolute;
+  display: flex;
+}
+
+.read-more-border-line-lower-left {
+  top: -44px;
+  position: relative;
+  width: 20px;
+  height: 100px;
+  background: linear-gradient(
+    30deg,
+    transparent 49%,
+    var(--white) 50%,
+    var(--white) 50%,
+    transparent 51%
+  );
+}
+
+.read-more-border-line-lower-right {
+  top: -44px;
+  position: relative;
+  width: 20px;
+  height: 100px;
+  background: linear-gradient(
+    -30deg,
+    transparent 49%,
+    var(--white) 50%,
+    var(--white) 50%,
+    transparent 51%
+  );
+}

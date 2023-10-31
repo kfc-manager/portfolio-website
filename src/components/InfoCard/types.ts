@@ -2,7 +2,10 @@ type InfoCardProps = {
   icon: JSX.Element;
   headline: string;
   body: string | undefined;
-  index: number;
+  project: Project | undefined;
+  horizontalSlide: boolean;
+  delay: number;
+  time: number;
 };
 
 export type { InfoCardProps };

@@ -1,20 +1,4 @@
-.info-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 80vh;
-  margin: 70px;
-}
-
-.info-box-row {
-  display: flex;
-}
-
-.even {
-  margin-left: 200px;
-}
-
-@keyframes info-box-slide-in {
+@keyframes info-card-slide-in-up {
   0% {
     bottom: -300%;
   }
@@ -25,6 +9,20 @@
   100% {
     opacity: 1;
     bottom: 0;
+  }
+}
+
+@keyframes info-card-slide-in-left {
+  0% {
+    right: -100%;
+  }
+  20% {
+    opacity: 1;
+    right: -100%;
+  }
+  100% {
+    opacity: 1;
+    right: 0;
   }
 }
 
