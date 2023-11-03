@@ -1,5 +1,5 @@
+import { useEffect, useState } from "react";
 import InfoCard from "../InfoCard/InfoCard";
-import "./styles.css";
 
 const Projects = (): JSX.Element => {
   const projects: Project[] = [
@@ -40,9 +40,45 @@ const Projects = (): JSX.Element => {
     },
   ];
 
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [windowHeight, setWindowHeight] = useState<number>(window.innerHeight);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      setWindowHeight(window.innerHeight);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
-    <div className="projects">
-      <div className="project-card-row">
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: windowWidth > 750 ? "center" : "unset",
+        height: "calc(100vh - 80px)",
+        overflowX:
+          windowWidth > 1700 || windowWidth <= 750 ? "hidden" : "scroll",
+        overflowY:
+          windowHeight > 830 && windowWidth > 750 ? "hidden" : "scroll",
+        gap: "50px",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          gap: "50px",
+          flexDirection: windowWidth > 750 ? "row" : "column",
+          marginTop: windowWidth > 750 ? "unset" : "50px",
+        }}
+      >
         <InfoCard
           icon={
             <svg
@@ -133,7 +169,13 @@ const Projects = (): JSX.Element => {
           time={1}
         />
       </div>
-      <div className="project-card-row">
+      <div
+        style={{
+          display: "flex",
+          gap: "50px",
+          flexDirection: windowWidth > 750 ? "row" : "column",
+        }}
+      >
         <InfoCard
           icon={
             <svg
@@ -154,7 +196,7 @@ const Projects = (): JSX.Element => {
           body={undefined}
           project={projects[4]}
           delay={2}
-          horizontalSlide={false}
+          horizontalSlide={windowWidth <= 750}
           time={1}
         />
         <InfoCard
@@ -176,7 +218,7 @@ const Projects = (): JSX.Element => {
           body={undefined}
           project={projects[5]}
           delay={2.5}
-          horizontalSlide={false}
+          horizontalSlide={windowWidth <= 750}
           time={1}
         />
         <InfoCard
@@ -198,7 +240,7 @@ const Projects = (): JSX.Element => {
           body={undefined}
           project={projects[6]}
           delay={3}
-          horizontalSlide={false}
+          horizontalSlide={windowWidth <= 750}
           time={1}
         />
       </div>

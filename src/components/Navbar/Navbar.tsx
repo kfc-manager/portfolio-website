@@ -1,10 +1,47 @@
 import { Link } from "react-router-dom";
 import "./styles.css";
+import { useEffect, useState } from "react";
 
 const Navbar = (): JSX.Element => {
+  const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+
+  const handleButtonClick = (event: React.MouseEvent<HTMLElement>) => {
+    event.stopPropagation();
+    setIsOpen(!isOpen);
+  };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    const handleClick = () => {
+      setIsOpen(false);
+    };
+
+    window.addEventListener("resize", handleResize);
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+  useEffect(() => {
+    windowWidth > 600 && setIsOpen(false);
+  }, [windowWidth]);
+
   return (
     <div className="navbar">
-      <div className="socials">
+      <div
+        style={{
+          display: "flex",
+          fontSize: windowWidth > 600 ? "38px" : "30px",
+          gap: "20px",
+          padding: "20px",
+        }}
+      >
         <a
           className="social-link"
           href="https://github.com/kfc-manager"
@@ -44,17 +81,63 @@ const Navbar = (): JSX.Element => {
           </svg>
         </a>
       </div>
-      <div className="routerlinks">
-        <Link className="routerlink" to="/">
-          Home
-        </Link>
-        <Link className="routerlink" to="/about">
-          About
-        </Link>
-        <Link className="routerlink" to="/projects">
-          Projects
-        </Link>
-      </div>
+      {windowWidth > 600 ? (
+        <div className="routerlinks">
+          <Link className="routerlink" to="/">
+            Home
+          </Link>
+          <Link className="routerlink" to="/about">
+            About
+          </Link>
+          <Link className="routerlink" to="/projects">
+            Projects
+          </Link>
+        </div>
+      ) : (
+        <div style={{ marginRight: "8px" }}>
+          <button className="navbar-burger-button" onClick={handleButtonClick}>
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 32 32"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+              style={{ color: "inherit", fontSize: "32px" }}
+            >
+              <path d="M 4 7 L 4 9 L 28 9 L 28 7 Z M 4 15 L 4 17 L 28 17 L 28 15 Z M 4 23 L 4 25 L 28 25 L 28 23 Z"></path>
+            </svg>
+          </button>
+          {isOpen && (
+            <ul
+              style={{
+                position: "absolute",
+                display: "flex",
+                flexDirection: "column",
+                textAlign: "left",
+                backgroundColor: "var(--dark-grey)",
+                padding: "16px",
+                right: "1px",
+                marginTop: "6px",
+                gap: "16px",
+                border: "var(--light-grey) solid 2px",
+                zIndex: 1,
+              }}
+            >
+              <Link className="routerlink" to="/">
+                Home
+              </Link>
+              <Link className="routerlink" to="/about">
+                About
+              </Link>
+              <Link className="routerlink" to="/projects">
+                Projects
+              </Link>
+            </ul>
+          )}
+        </div>
+      )}
     </div>
   );
 };
