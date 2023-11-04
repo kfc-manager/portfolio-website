@@ -38,22 +38,28 @@ const About = (): JSX.Element => {
           animationName: "text-box-slide-in",
           animationDuration: "2s",
           animationIterationCount: 1,
-          margin: windowWidth > 1400 ? "unset" : "60px 50px 0 50px",
+          margin:
+            windowWidth > 1400
+              ? "unset"
+              : windowWidth > 750
+                ? "60px 50px 0 50px"
+                : "60px 20px 0 20px",
           boxShadow: "var(--box-shadow)",
         }}
       >
         <p
           style={{
             overflow: "scroll",
-            margin: windowWidth > 750 ? "50px" : "40px",
+            margin: windowWidth > 750 ? "50px" : "20px",
             color: "var(--dark-grey)",
-            fontSize: windowWidth > 750 ? "24px" : "20px",
+            fontSize: windowWidth > 750 ? "24px" : "18px",
             lineHeight: windowWidth > 750 ? "1.7" : "1.5",
-            fontWeight: 800,
+            fontWeight: windowWidth > 750 ? 800 : 600,
           }}
         >
-          Hi I'm Kilian a 23 year old Software Engineer. I have a strong passion
-          for building and deploying highly scalable and performant backend
+          Hi I'm Kilian,
+          <br /> a 23 year old Software Engineer. I have a strong passion for
+          building and deploying highly scalable and performant backend
           services. For realizing that passion I have build my Tech Stack around
           modern technologies, which are commonly used industry standards.
           Preferably I build my services in Golang with strong use of it's rich
